@@ -1,0 +1,25 @@
+Skenario:
+Kamu sedang membuat program kasir sederhana. Seorang pelanggan membeli sebuah barang dengan jumlah tertentu. Toko memiliki aturan sebagai berikut:
+​Total Harga: Dihitung dari hargaBarang dikali jumlahBeli.
+​Diskon: Jika total harga mencapai Rp 100.000 atau lebih, pelanggan dapat diskon 10%.
+​Pajak: Setelah dipotong diskon, totalnya dikenakan pajak sebesar 5%.
+​Data Input (Gunakan variabel ini):
+​hargaBarang = 25000
+​jumlahBeli = 5
+
+Answer :
+const hargaBarang = 25000;
+const jumlahBeli =5;
+const total=hargaBarang*jumlahBeli;
+let bayar;
+let pajak;
+
+if (total>100000){bayar = total-(total*0.1)} else {
+  console.log(" no diskon")};
+console.log("jumlah dibayar sebelum pajak:"+ bayar);
+
+
+pajak = bayar + (bayar * 0.05);
+console.log("jumlah dibayar setelah pajak:"+ pajak);
+
+
