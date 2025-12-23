@@ -1,0 +1,25 @@
+
+
+// Indeks 0: Buku, 1: Pensil, 2: Penghapus, 3: Penggaris, 4: Spidol
+
+const stokBarang = [15,8,20,5,30];
+const newStokBarang= stokBarang[1]+5;
+
+//ambil 1 data dengan indeks
+console.log ("jumlah penggaris: "+ stokBarang[3]);
+
+//replace 1 data dengan indeks
+console.log ("jumlah awal pensil: "+stokBarang[1]+" menjadi "+newStokBarang);
+
+//add 1 data (pake index bisa juga)
+stokBarang.push(10,20);
+
+//delete 1 data (pake delete bisa juga) /shift(apus dari depan)
+// delete bnyk data sekaligus pake slice<index><jumlah>
+
+stokBarang.pop();
+
+//ambil semua data
+console.log (stokBarang);
+
+//metode lain: filter, include, sort
