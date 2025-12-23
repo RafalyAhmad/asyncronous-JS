@@ -1,4 +1,6 @@
-
+Studi Kasus: Manajemen Stok Gudang
+​Skenario:
+Kamu adalah seorang operator gudang. Kamu punya daftar stok barang dalam sebuah array. Kamu diminta untuk melakukan pengecekan dasar.
 
 // Indeks 0: Buku, 1: Pensil, 2: Penghapus, 3: Penggaris, 4: Spidol
 
@@ -22,4 +24,4 @@ stokBarang.pop();
 //ambil semua data
 console.log (stokBarang);
 
-//metode lain: filter, include, sort
+//metode lain: filter, include, sort, length
