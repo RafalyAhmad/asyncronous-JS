@@ -1,0 +1,30 @@
+Tantangan Menengah: Sistem Penggajian Karyawan (Payroll)
+​Skenario:
+Kamu diberikan sebuah daftar karyawan dalam bentuk Array of Objects. Kamu harus menghitung total gaji yang harus dibayar perusahaan setelah dipotong pajak, tapi hanya untuk karyawan yang statusnya "Aktif".
+​Aturan:
+​Hanya hitung karyawan dengan status: "Aktif".
+​Setiap gaji karyawan aktif harus dipotong Pajak 10%.
+​Tampilkan nama karyawan dan Gaji Bersih (setelah pajak) mereka.
+​Di akhir, tampilkan Total Pengeluaran seluruh gaji bersih tersebut.
+
+
+
+const karyawan = [
+  { nama: "Budi", gaji: 5000000, status: "Aktif" },
+  { nama: "Ani", gaji: 6000000, status: "Nonaktif" },
+  { nama: "Caca", gaji: 4500000, status: "Aktif" },
+  { nama: "Deni", gaji: 7000000, status: "Aktif" }
+];
+var total=0;
+  
+for (i=0;i<karyawan.length;i++){
+//Filter karyawan aktif
+  if(karyawan[i].status==="Aktif"){
+    //Gaji dipotong
+var gaji= karyawan[i].gaji-(karyawan[i].gaji*0.1);
+console.log("Karyawan yang aktif: "+karyawan[i].nama+" dan gajinya adalah "+gaji)
+total+=gaji
+}}
+
+console.log("Total pengeluaran perusahaan : "+total)
+
