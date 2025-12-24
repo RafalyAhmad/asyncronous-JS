@@ -1,0 +1,18 @@
+Tantangan: Scanner Barang Kadaluarsa
+​Skenario:
+Kamu memiliki daftar sisa hari sebelum barang di rak supermarket kadaluarsa. Kamu harus mengecek satu per satu secara otomatis.
+​Data Input:
+const sisaHari = [10, 2, 0, -1, 5, 1];
+(Angka positif berarti sisa hari, 0 atau negatif berarti sudah kadaluarsa).
+​Tugasmu:
+Gunakan for loop untuk memeriksa setiap angka dalam array tersebut.
+​Jika angka kurang dari atau sama dengan 0, tampilkan: "Barang ke-[indeks] harus dibuang!".
+​Jika angka lebih dari 0, tampilkan: "Barang ke-[indeks] aman".
+
+
+const sisaHari = [10,2,0,-1,5,1];
+for (i=0;i<sisaHari.length;i++){
+  if(sisaHari[i]>=0){
+  console.log("Barang ke-"+i+" masih aman dimakan.")}
+  else(console.log("Barang ke-"+i+" sudah beracun"))
+}
