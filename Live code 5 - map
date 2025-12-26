@@ -1,0 +1,19 @@
+Gunakan fungsi .map() untuk membuat array baru bernama barangSiapJual dengan ketentuan:
+​Nama barang harus diubah menjadi HURUF KAPITAL (UpperCase).
+​
+​Tambahkan properti baru bernama status dengan aturan: Jika harga di atas 1.000.000, statusnya "Barang Mewah", jika di bawah itu statusnya "Barang Reguler".
+
+const barang = [
+  { id: 101, nama: "laptop", harga: 10000000, kategori: "elektronik" },
+  { id: 102, nama: "meja", harga: 500000, kategori: "furnitur" },
+  { id: 103, nama: "mouse", harga: 200000, kategori: "elektronik" }
+];
+
+const barangSiapJual = barang.map(b=>{
+  return{
+    nama:b.nama.toUpperCase(),
+    status:b.harga>=1000000 ? "barang mewah" : "barang standar"
+  } }
+)
+
+console.log (barangSiapJual);
