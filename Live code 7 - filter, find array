@@ -1,1 +1,25 @@
-skenario
+Studi Kasus: Sistem Manajemen Inventaris Toko.
+
+Soal Latihan (Selesaikan step by step):
+CONCAT: Gabungkan daftarProduk dan produkBaru menjadi satu array besar bernama semuaProduk.
+FILTER: Dari semuaProduk, ambil hanya produk yang kategorinya "Minuman". Simpan di variabel daftarMinuman.
+FIND: Di dalam semuaProduk, cari satu produk yang namanya adalah "Roti". Simpan di variabel cariRoti.
+
+const daftarProduk = [
+  { id: 1, nama: "Kopi", kategori: "Minuman", harga: 15000 },
+  { id: 2, nama: "Roti", kategori: "Makanan", harga: 10000 },
+  { id: 3, nama: "Teh", kategori: "Minuman", harga: 8000 }
+];
+
+const produkBaru = [
+  { id: 4, nama: "Susu", kategori: "Minuman", harga: 20000 },
+  { id: 5, nama: "Biskuit", kategori: "Makanan", harga: 12000 }
+];
+
+const semuaProduk = daftarProduk.concat(produkBaru)
+const daftarMinuman = semuaProduk.filter(p=>p.kategori==="Minuman")
+const cariRoti = semuaProduk.find(p=>p.nama==="Roti")
+
+console.log(semuaProduk);
+console.log(daftarMinuman);
+console.log(cariRoti);
