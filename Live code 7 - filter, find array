@@ -23,3 +23,31 @@ const cariRoti = semuaProduk.find(p=>p.nama==="Roti")
 console.log(semuaProduk);
 console.log(daftarMinuman);
 console.log(cariRoti);
+
+
+
+
+
+
+studi kasus 2: Tugasmu (Buat dalam 3 langkah):
+Find (Login): Buat variabel userLogin untuk mencari user yang username-nya "budi_santoso" dan password-nya "456".
+Logic (Cek Akses): Jika user ditemukan, tampilkan pesan: "Login Berhasil, Selamat Datang [username]". Jika tidak ditemukan, tampilkan: "Username atau Password Salah".
+Filter (Manajemen Admin): Buat variabel daftarAdmin untuk mengambil semua user yang memiliki role sebagai "admin".
+
+const dbUsers = [
+  { id: 1, username: "admin_toko", password: "123", role: "admin" },
+  { id: 2, username: "budi_santoso", password: "456", role: "user" },
+  { id: 3, username: "siti_aminah", password: "789", role: "user" }
+];
+const inputUsername="budi_santoso";
+const inputPassword="456";
+
+const userLogin = dbUsers.find(l=>
+l.username===inputUsername && l.password===inputPassword);
+
+if (userLogin){
+  console.log("Login Berhasil, selamat datang " + inputUsername)}
+  else (console.log("Username atau password salah"));
+  
+ const daftarAdmin = dbUsers.filter(r=>r.role==="admin")
+ console.log("Akun dengan role admin: "+daftarAdmin[0].username);
