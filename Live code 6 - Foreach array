@@ -1,1 +1,20 @@
-studi kasus
+studi kasus: Gunakan .filter() untuk mengambil pelanggan yang belum lunas (lunas: false).
+​Gunakan .forEach() pada hasil filter tersebut untuk mencetak pesan penagihan ke konsol.
+​Format pesan penagihan: "Kirim WA ke [nama]: Segera bayar tagihan Anda sebesar [tagihan]!"
+​Hitung total tunggakan dari semua pelanggan yang belum lunas tersebut.
+
+const pelanggan = [
+  { id: 1, nama: "Asep", tagihan: 50000, lunas: false },
+  { id: 2, nama: "Siti", tagihan: 150000, lunas: true },
+  { id: 3, nama: "Budi", tagihan: 75000, lunas: false },
+  { id: 4, nama: "Rina", tagihan: 200000, lunas: false }
+];
+let totalTagihan=0;
+
+const tunggakan = pelanggan.filter(t=>t.lunas===false)
+.forEach((t)=>{
+  console.log(`kirim wa ke ${t.nama}: segera bayar tagihan anda sebesar ${t.tagihan}`)
+  totalTagihan += t.tagihan;
+})
+
+console.log(totalTagihan)
