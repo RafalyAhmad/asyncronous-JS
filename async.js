@@ -1,16 +1,8 @@
-const getUser = (id, cb) => {
-  const time = id === 1 ? 1000 : 2000;
-  setTimeout(() => {
-    const nama = id === 1 ? "ahmad" : "ali";
-    cb({ id, nama });
-  }, time);
-};
+function hitung(angka1,angka2,callback){
+    return callback(angka1,angka2);
+}
 
-const user1 = getUser(1, (hasil) => {
-  console.log(hasil);
-});
-const user2 = getUser(2, (hasil) => {
-  console.log(hasil);
-});
+const tambah = (a,b) => a+b;
+const kali = (a,b)=> a*b;
 
-const halo = console.log("hello world");
+console.log(hitung(10,5,tambah))
