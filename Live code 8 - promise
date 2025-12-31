@@ -1,0 +1,12 @@
+const janjiKetemuan = new Promise((resolve, reject) => {
+    let cuacaCerah = true;
+    if (cuacaCerah) {
+        resolve("Kita jadi jalan!");
+    } else {
+        reject("Maaf, hujan deras.");
+    }
+});
+
+janjiKetemuan
+    .then(hasil => console.log(hasil)) // Jika sukses
+    .catch(error => console.log(error)); // Jika gagal
