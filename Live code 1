@@ -1,4 +1,4 @@
-Skenario:
+operasi dasar array Skenario:
 Kamu sedang membuat program kasir sederhana. Seorang pelanggan membeli sebuah barang dengan jumlah tertentu. Toko memiliki aturan sebagai berikut:
 ​Total Harga: Dihitung dari hargaBarang dikali jumlahBeli.
 ​Diskon: Jika total harga mencapai Rp 100.000 atau lebih, pelanggan dapat diskon 10%.
