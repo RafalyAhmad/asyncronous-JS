@@ -1,2 +1,3 @@
 Private Commit Activity :
-- Add feature accumulation value of project 
+- Add feature accumulation value of project
+- Add feature accumulation material & machinery
