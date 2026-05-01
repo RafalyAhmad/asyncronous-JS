@@ -1,0 +1,25 @@
+package main
+
+import "fmt"
+
+func main() {
+    
+   // antrian := []int {1,2,3,4,7}
+   
+   type student struct
+   {
+       Name string
+       Age int
+       Address string
+   }
+   
+   a := student{
+       Name:"Ali",
+       Age:22,
+       Address:"Lampung",
+   }
+   
+   
+    fmt.Println("Hello World", a.Name, "Berumur",a.Age,"tinggal di", a.Address)
+
+}
